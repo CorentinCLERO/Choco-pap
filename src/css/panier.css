@@ -1,0 +1,9 @@
+.itemsPanier {
+    height: 30em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.buttonPanier {
+    width: 13em;
+}

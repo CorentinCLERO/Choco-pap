@@ -1,0 +1,22 @@
+.imagePanier {
+    width: 15em;
+    height: 10em;
+}
+
+.auMilieu {
+    height: 10em;
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width: 576px) {
+    .imagePanier {
+        width: 6em;
+        height: 6em;
+    }
+
+    .auMilieu {
+        height: 6em;
+    }
+
+}
