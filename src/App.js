@@ -27,6 +27,23 @@ class App extends React.Component {
     this.updateNumberOfProducts = this.updateNumberOfProducts.bind(this)
   }
 
+  componentDidMount() {
+    const cart = localStorage.getItem('products');
+    let updatedCart;
+    if (cart === null) {
+      updatedCart = [];
+    } else {
+      updatedCart = JSON.parse(cart);
+    }
+    this.setState({ cart: updatedCart });
+    this.updateNumberOfProducts();
+    this.updateTotalPrice();
+  }
+
+  componentDidUpdate() {
+    localStorage.setItem('products', JSON.stringify(this.state.cart))
+  }
+
   addToCart(productId, qty) {
     this.setState(state => {
       const cart = [...state.cart];

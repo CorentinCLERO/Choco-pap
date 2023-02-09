@@ -41,7 +41,6 @@ function Accueil() {
                 <span onClick={() => setImgValue(3)} className="p-2 cursor">{imgValue === 3 ? <FaBullseye size={20} /> : <FaGenderless size={20} />}</span>
             </div>
         </div>
-
     )
 }
 
