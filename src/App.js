@@ -106,7 +106,7 @@ class App extends React.Component {
     this.setState(state => {
       const cart = [...state.cart]
       const numberOfProducts = cart.reduce((acc, item) => {
-        if (item) acc += 1;
+        if (item) acc += (1 * item.qty);
         return acc;
       }, 0);
       return { numberOfProducts }

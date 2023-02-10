@@ -7,3 +7,7 @@
 .buttonPanier {
     width: 13em;
 }
+
+.child {
+    z-index: 1;
+}

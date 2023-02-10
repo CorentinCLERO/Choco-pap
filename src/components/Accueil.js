@@ -24,7 +24,7 @@ function Accueil() {
     }
 
     return (
-        <div className="bgimage" style={{
+        <div className="bgimage text-white" style={{
             backgroundImage: `url(./images/accueil${imgValue}.jpg)`,
         }}>
             <h2 className='titleCP'>CHOCO PAP</h2>
@@ -33,7 +33,7 @@ function Accueil() {
                 <span className='col-auto cursor' onClick={addOneToNumberProduct}><FaChevronCircleRight size={40} /></span>
             </div>
             <div className='linkCP'>
-                <NavLink to="/Boutique" ><span className='fs-4 fw-bold text-info border border-info bg-black bg-opacity-25'>Voir la boutique</span></NavLink>
+                <NavLink to="/Boutique" ><span className='fs-3 fw-bold text-white border border bg-black bg-opacity-25'>Voir la boutique</span></NavLink>
             </div>
             <div className='selectorCP'>
                 <span onClick={() => setImgValue(1)} className="p-2 cursor">{imgValue === 1 ? <FaBullseye size={20} /> : <FaGenderless size={20} />}</span>
